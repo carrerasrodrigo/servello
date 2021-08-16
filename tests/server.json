@@ -1,0 +1,23 @@
+{
+    "server_name": "Servello Test",
+    "urls": [
+        {
+            "method_list": ["GET"],
+            "pattern": "/url/",
+            "content": "hello",
+            "content_file": "tests/server-content.txt",
+            "content_type": "text",
+            "status": 200,
+            "headers": [["XX", "1"]]
+        },
+        {
+            "method_list": ["GET", "POST"],
+            "pattern": "/url2/",
+            "content": "hello url 2",
+            "content_type": "text",
+            "status": 200,
+            "headers": []
+        }
+    ]
+
+}

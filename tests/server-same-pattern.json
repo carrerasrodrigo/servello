@@ -1,0 +1,20 @@
+{
+    "server_name": "Servello Test",
+    "urls": [
+        {
+            "pattern": "/p1/",
+            "content": "c1",
+            "content_type": "text",
+            "status": 200,
+            "headers": []
+        },
+        {
+            "pattern": "/p1/",
+            "content": "c2",
+            "content_type": "text",
+            "status": 200,
+            "headers": []
+        }
+    ]
+
+}
