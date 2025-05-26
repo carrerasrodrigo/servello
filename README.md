@@ -2,6 +2,31 @@
 
 Servello is a developing, flask server that will take a configuration file and will build a server automatically. It aims to help creating quick servers for testing.
 
+# Installation
+
+You can install Servello using pip:
+
+```bash
+# Install from source
+git clone https://github.com/carrerasrodrigo/servello.git
+cd servello
+pip install -e .
+
+# or
+pip install git+https://github.com/carrerasrodrigo/servello.git#egg=servell
+```
+
+# Available Commands
+
+After installation, the following command will be available in your terminal:
+
+```bash
+servello --config <path-to-config-file>
+```
+
+Options:
+- `--config`: Path to your JSON configuration file (required)
+
 # How to use it
 ```
 > servello --config file.json
@@ -18,7 +43,7 @@ Servello is a developing, flask server that will take a configuration file and w
     "server_name": "Servello Test",
     "urls": [
         {
-            "method_list": ["GET", "POST"]
+            "method_list": ["GET", "POST"],
             "pattern": "/url/",
             "content": "some content",
             "content_file": "path-to-a-file/server-content.txt",
@@ -56,4 +81,5 @@ Servello is a developing, flask server that will take a configuration file and w
 > pytest tests
 ```
 # Changelog
+- 0.0.1 Added regex in url
 - 0.0.0 Initial version

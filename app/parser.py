@@ -10,7 +10,7 @@ logger = logging.getLogger()
 
 
 def create_route_method(url):
-    def m():
+    def m(*args, **kwargs):
         response = Response(url.content, mimetype=url.content_type,
             status=url.status)
 
